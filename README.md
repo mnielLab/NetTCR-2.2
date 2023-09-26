@@ -57,12 +57,12 @@ Example:
 
 This will generate and save a `<model_name>_prediction.csv` file with the predictions, which is saved in the specified output directory. 
 
-## Pre-trained models
+## Trained Models
 The folder `models` contains the final models from the NetTCR 2.2 publication (currently unpublished), along with the predictions used in the publication (`cv_pred_df.csv`). Additionaly, a `negative_controls` is included, which contains the predictions on the negative controls from the IMMREP 2022 benchmark [5], which is used for assigning a percentile rank to each observation.
 
 The models in this folder can be used for predictions in the same way as the models trained by the user. Example:
 
-`python src/predict.py --test_data data/examples/test_example.csv --outdir models/nettcr_2_2_pretrained --model_name "t.1.v.2" --model_type pretrained`   
+`python src/predict.py --test_data data/examples/test_example.csv --outdir models/nettcr_2_2_peptide --model_name "t.1.v.2" --model_type peptide`   
 
 ### References
 [1] Montemurro, Alessandro, et al. "NetTCR-2.1: Lessons and guidance on how to develop models for TCR specificity predictions." *Frontiers in Immunology* Volume 13 (2022).
