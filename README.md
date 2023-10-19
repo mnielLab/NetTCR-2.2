@@ -1,5 +1,5 @@
 # NetTCR-2.2 - Sequence-based prediction of peptide-TCR interactions using paired chain data
-NetTCR-2.2 is a deep learning model used to predict TCR specificity. Like NetTCR-2.1 [1], NetTCR-2.2 uses convolutional neural networks (CNN) to predict whether a given TCR binds a specific peptide. The NetTCR-2.2 publication is currently unpublished, but the NetTCR-2.1 publication is available at https://www.frontiersin.org/articles/10.3389/fimmu.2022.1055151/full.
+NetTCR-2.2 is a deep learning model used to predict TCR specificity. Like NetTCR-2.1 [1], NetTCR-2.2 uses convolutional neural networks (CNN) to predict whether a given TCR binds a specific peptide.
 
 The scripts in this repository allows for training and testing of models in three different modes, namely `pan`, `peptide` and `pretrained`. 
 
@@ -63,6 +63,12 @@ The folder `models` contains the final models from the NetTCR 2.2 publication (c
 The models in this folder can be used for predictions in the same way as the models trained by the user. Example:
 
 `python src/predict.py --test_data data/examples/test_example.csv --outdir models/nettcr_2_2_peptide --model_name "t.1.v.2" --model_type peptide`   
+
+## NetTCR 2.2 Webserver
+The NetTCR-2.2 pre-trained models are also available for predictions on https://services.healthtech.dtu.dk/services/NetTCR-2.2/.
+
+## Citation
+Jensen, M. F., & Nielsen, M. (2023). NetTCR 2.2—Improved TCR specificity predictions by combining pan- and peptide-specific training strategies, loss-scaling and integration of sequence similarity. bioRxiv.  https://doi.org/10.1101/2023.10.12.562001
 
 ### References
 [1] Montemurro, Alessandro, et al. "NetTCR-2.1: Lessons and guidance on how to develop models for TCR specificity predictions." *Frontiers in Immunology* Volume 13 (2022).
