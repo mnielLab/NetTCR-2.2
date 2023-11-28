@@ -14,6 +14,7 @@ The model architectures were built in Keras [2], and are located in `src/nettcr_
 ## License
 NetTCR-2.2 is freely available for academic user for non-commercial purposes (see license). The product is provided free of charge, and, therefore, on an "as is" basis, without warranty of any kind.
 Other users: If you plan to use NetTCR-2.2 or any data provided with the script in any for-profit application, you are required to obtain a separate license. To do so, please contact health-software@dtu.dk.
+
 For licence details refer to [***academic_software_license_agreement.pdf***](https://github.com/mnielLab/NetTCR-2.2/blob/main/academic_software_license_agreement.pdf)
 
 ## Data
