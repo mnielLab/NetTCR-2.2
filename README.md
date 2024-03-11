@@ -76,6 +76,7 @@ The NetTCR-2.2 pre-trained models are also available for predictions on https://
 Alternatively, the "src/make_webserver_prediction.py" script can be used to locally make predictions similar to the ones found on the webserver. An example of such use is shown below:
 
 *github_dir={path_to_github_repository}*
+
 *python $github_dir/src/make_webserver_prediction.py -d $github_dir -i $github_dir/data/small_example.csv -o $github_dir/output -a 10*
 
 A short description of the relevant input arguments are shown below:
