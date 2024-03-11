@@ -73,18 +73,18 @@ The models in this folder can be used for predictions in the same way as the mod
 ## NetTCR 2.2 Webserver
 The NetTCR-2.2 pre-trained models are also available for predictions on https://services.healthtech.dtu.dk/services/NetTCR-2.2/.
 
-Alternatively, the "src/make_webserver_prediction.py" script can be used to locally make predictions similar to the ones found on the webserver. An example of such use is shown below:
+Alternatively, the `src/make_webserver_prediction.py` script can be used to locally make predictions similar to the ones found on the webserver. An example of such use is shown below:
 
-*github_dir={path_to_github_repository}*
+`github_dir={path_to_github_repository}`
 
-*python $github_dir/src/make_webserver_prediction.py -d $github_dir -i $github_dir/data/small_example.csv -o $github_dir/output -a 10*
+`python $github_dir/src/make_webserver_prediction.py -d $github_dir -i $github_dir/data/small_example.csv -o $github_dir/output -a 10`
 
 A short description of the relevant input arguments are shown below:
 
-* -d: Full path to the input directory (e.g. the location where this GitHub repository has been downloaded to).
-* -i: Full path to the input data. The columns in the input data should be `peptide`, `A1`,`A2`,`A3`, `B1`, `B2`, `B3`, and the input files should be comma-separated-(See `data/small_example.csv` as an example).
-* -o: Full path to the output directory, where the predictions and intermediate files are saved to.
-* -a: Scaling factor for TCRbase integration (default = 10).
+* `-d`: Full path to the input directory (e.g. the location where this GitHub repository has been downloaded to).
+* `-i`: Full path to the input data. The columns in the input data should be `peptide`, `A1`,`A2`,`A3`, `B1`, `B2`, `B3`, and the input files should be comma-separated-(See `data/small_example.csv` as an example).
+* `-o`: Full path to the output directory, where the predictions and intermediate files are saved to.
+* `-a`: Scaling factor for TCRbase integration (default = 10).
 
 ## Citation
 Mathias Fynbo Jensen, Morten Nielsen (2024) **Enhancing TCR specificity predictions by combined pan- and peptide-specific training, loss-scaling, and sequence similarity integration** *eLife* **12**:RP93934. https://doi.org/10.7554/eLife.93934.3
