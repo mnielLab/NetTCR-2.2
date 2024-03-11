@@ -1,0 +1,14 @@
+# Makefile 
+
+CC	= gcc
+
+#MLIB    = /home/people/mniel/plexus/
+#MLIB	= /usr/cbs/bio/src/netMHCIIpan-4.0/NetMHCIIpan-4.0/src
+MLIB	= /home/projects/vaccine/people/morni/src
+
+CFLAGS	= -I$(MLIB)/utils $(COPTS) -O3 
+
+LIB     = $(MLIB)/utils/utils_Linux_x86_64.a 
+
+.c:
+	$(CC) $(CFLAGS) $@.c -o $@ $(LIB) -lm

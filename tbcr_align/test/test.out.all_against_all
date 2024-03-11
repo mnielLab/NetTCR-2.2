@@ -1,0 +1,21 @@
+# /home/projects/vaccine/people/morni/tbcr_align/Linux_x86_64/bin/tbcr_align -a test
+# Fri Oct 28 08:35:11 2022
+# User: morni
+# PWD : /home/projects/vaccine/people/morni/tbcr_align/test
+# Host: Linux g-12-l0002 3.10.0-1062.4.1.el7.x86_64 x86_64
+# -a       1                    Run all against all
+# Command line parameters set to:
+#	[-v]                 0                    Verbose mode
+#	[-beta float]        0.113870             Hadamard power of blosum matrix
+#	[-kmin int]          1                    Min value of k for k-mers
+#	[-kmax int]          30                   Max value of k for k-mers
+#	[-blqij filename]    /home/projects/vaccine/people/morni/tbcr_align/Linux_x86_64/data/blosum62.qij Blosum qij matrix filename
+#	[-xs]                0                    Exclude self
+#	[-w string]                               Weights on CDR [w1,w2,w3,w4,w5,w6]
+#	[-a]                 1                    Run all against all
+#	[-db filename]                            Receptor DB (format cdr1a cdr2a cdr3a cdr1b cdr2b cdr3b [target])
+# Read 21 elements on linelist /home/projects/vaccine/people/morni/tbcr_align/Linux_x86_64/data/blosum62.qij
+# Read 3 elements on pairlist test
+# ALL Query YKTSINNL IRSNERE CATSPHYGNNRLAF DPISGHTAL YFQGNSAPDKSGLPSDRFS CASSLAPYTASTDTQYF -99.900002 Hit HSVSNAYNF GSKPS CAVEDYNKFYF KPISGHDYL YFNNNVPIDDSGMPEDRFS CASGRLSYNEQFF 4.793818 -99.900002
+# ALL Query YKTSINNL IRSNERE CATSPHYGNNRLAF DPISGHTAL YFQGNSAPDKSGLPSDRFS CASSLAPYTASTDTQYF -99.900002 Hit YTNSMFDYF ISSIKDK CAAEVMGDYKLSF DPISGHDNL HFVKESKQDESGMPNNRFL CASSPHRGLEGYTF 4.827758 -99.900002
+# ALL Query HSVSNAYNF GSKPS CAVEDYNKFYF KPISGHDYL YFNNNVPIDDSGMPEDRFS CASGRLSYNEQFF -99.900002 Hit YTNSMFDYF ISSIKDK CAAEVMGDYKLSF DPISGHDNL HFVKESKQDESGMPNNRFL CASSPHRGLEGYTF 4.885802 -99.900002

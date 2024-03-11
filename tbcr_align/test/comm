@@ -1,0 +1,3 @@
+../tbcr_align -a test > test.out.all_against_all
+../tbcr_align -db database_example.tsv test > test.out.db
+

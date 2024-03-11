@@ -1,0 +1,12 @@
+# Makefile 
+
+CC	= gcc
+
+DLIB    = /Users/mniel/src
+
+CFLAGS	= -I$(DLIB)/utils $(COPTS) -O3 
+
+LIB     = $(DLIB)/utils/utils_Darwin_x86_64.a 
+
+.c:
+	$(CC) $(CFLAGS) $@.c -o $@ $(LIB) -lm

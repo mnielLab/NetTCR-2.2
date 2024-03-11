@@ -1,0 +1,39 @@
+#! /bin/tcsh -f
+
+# This the main tbcr_align 1.0 script. It only acts as the frontend to the
+# software proper, a compiled binary.
+# 
+# VERSION:	2022 27 Oct launch
+# 
+
+###############################################################################
+#               GENERAL SETTINGS: CUSTOMIZE TO YOUR SITE
+###############################################################################
+
+# full path to the TBCR_Align 1.0 directory (mandatory)
+setenv	NMHOME	/mnt/c/Users/Mathias/Documents/webserver/tbcr_align
+
+# determine where to store temporary files (must be writable to all users)
+
+setenv  TMPDIR  /tmp
+
+# determine platform (do not change this unless you don't have 'uname'!)
+setenv	UNIX	`uname -s`
+setenv	AR	`uname -m`
+
+###############################################################################
+#               NOTHING SHOULD NEED CHANGING BELOW THIS LINE!
+###############################################################################
+
+# other settings
+set PLATFORM = `echo $UNIX $AR | awk '{print $1"_"$2}'`
+setenv TBCR_ALIGN $NMHOME/$PLATFORM
+
+# main ========================================================================
+if ( -x $TBCR_ALIGN/bin/tbcr_align ) then
+   $TBCR_ALIGN/bin/tbcr_align $*
+else
+   echo tbcr_align: no binaries found for $PLATFORM $TBCR_ALIGN/bin/tbcr_align
+endif
+
+# end of script ===============================================================
