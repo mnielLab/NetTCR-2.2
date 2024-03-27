@@ -52,7 +52,6 @@ test_df = pd.read_csv(test_data)
 assert "A1" and "A2" and "A3" in test_df.columns, "Make sure the input files contains all the CDRs"
 assert "B1" and "B2" and "B3" in test_df.columns, "Make sure the input files contains all the CDRs"
 assert "peptide" in test_df.columns, "Couldn't find peptide in the input data"
-assert "binder" in test_df.columns, "Couldn't find target labels in the input data, which is required for training"
 
 pep_list = list(test_df.peptide.value_counts(ascending=False).index)
 
